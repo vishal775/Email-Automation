@@ -5,7 +5,6 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import urllib.request
 import time
-import smtplib
 from email.message import EmailMessage
 
 
