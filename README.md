@@ -27,11 +27,11 @@
 
 **HOW TO RUN THE CODE OR THE PROCEDURE TO GET THE OUTPUT**
 
-   * There are **_2 steps_** to to run this code 
-   **_Step 1_** - Go to 'Manage your Google Account' setting and click on 'Security'.
+   1.) There are **_2 steps_** to to run this code 
+   2.) **_Step 1_** - Go to 'Manage your Google Account' setting and click on 'Security'.
           * Turn on the '2-Step Verification' with the user credentials.
           * It is always safe to turn on 2-Step Verification for your google gmail account.
-   **_Step 2_** - Again go to 'Manage your Google Account' setting and click on 'Security'.
+   3). **_Step 2_** - Again go to 'Manage your Google Account' setting and click on 'Security'.
           * just below '2-Step Verification' you have 'App passwords'.
           * Click on select app and give custom name of yours and click on generate.
           * You will get 16-digit 'Your app password for your device' copy it.
