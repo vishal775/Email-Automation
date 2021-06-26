@@ -1,5 +1,6 @@
-# Email-Automation
-Sending mail **professionally** using python with N number of **attachments and without attachments with all confirmations**
+**Version 2.0.1**
+    **Email-Automation**
+    Sending mail **professionally** using python with N number of **attachments and without attachments with all confirmations**
 
 **!!!  IMPORTANT NOTES  !!!**
 
@@ -35,3 +36,6 @@ Sending mail **professionally** using python with N number of **attachments and 
         * You will get 16-digit 'Your app password for your device' copy it.
         * Now open Email.py in editor mode paste it in YOUR_PASSWORD_ and also give your email-id for which you generated 16-digit in YOUR_EMAIL-ID_ (_line number: 39,41,74,76,181,183_)
    4) Now Run the code 
+
+_License & Copyrights_
+_© Vishal J M, Sri Ramakrishna Engineering College_
