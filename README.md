@@ -1,4 +1,4 @@
-#Version 2.0.1
+# Version 2.0.1
 
    **Email-Automation**
    Sending mail **professionally** using python with N number of **attachments and without attachments with all confirmations**
