@@ -27,10 +27,12 @@
 
 **### HOW TO RUN THE CODE OR THE PROCEDURE TO GET THE OUTPUT**
 
-   * There are **_2 steps_** to to run this code .
+   * There are **_2 steps_** to to run this code.
+   
    * **_Step 1_** - Go to 'Manage your Google Account' setting and click on 'Security'.
         * Turn on the '2-Step Verification' with the user credentials.
         * It is always safe to turn on 2-Step Verification for your google gmail account.
+        
    * **_Step 2_** - Again go to 'Manage your Google Account' setting and click on 'Security'.
         * just below '2-Step Verification' you have 'App passwords'.
         * Click on select app and give custom name of yours and click on generate.
