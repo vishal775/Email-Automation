@@ -1,3 +1,6 @@
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+#                     SEND EMAIL USING COMMAND PROMPT (cmd)                        #
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
 import smtplib, ssl
 from email import encoders
 from email.mime.base import MIMEBase
@@ -7,8 +10,10 @@ import urllib.request
 import time
 from email.message import EmailMessage
 import os
-import shutil
+import shutil 
 
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Storing the email which is not send, as backup and send if internet is connected
 def storetoretrive(l,k,a):
     try:
         os.mkdir('Mail_Not_Send')
@@ -25,14 +30,15 @@ def storetoretrive(l,k,a):
     except:
         print('It seems you already have unsent emails')
 
+# Send Email without attachments
 def noattach(l,k,a):
     try:
         print('To : '+k+'\nSubject : '+l+'\nContent : '+a)
         subject = l
         msg_body = a
-        sender = "YOUR_EMAIL-ID_"
+        sender = "YOUR_EMAIL-ID_" # Check you have filled this required data
         reciever = k
-        password = 'YOUR_PASSWORD_'
+        password = 'YOUR_PASSWORD_' # Check you have filled this required data
         # action
         msg = EmailMessage()
         msg['subject'] = subject 
@@ -65,9 +71,9 @@ def sendwiatt(l,k,a):
     print('To : '+k+'\nSubject : '+l+'\nContent : '+a)
     subject = l
     body = a
-    sender_email = "YOUR_EMAIL-ID_"
+    sender_email = "YOUR_EMAIL-ID_" # Check you have filled this required data
     receiver_email = k
-    password = 'YOUR_PASSWORD_'
+    password = 'YOUR_PASSWORD_' # Check you have filled this required data
 
     # Create a multipart message and set headers
     message = MIMEMultipart()
@@ -112,7 +118,7 @@ def sendwiatt(l,k,a):
         print('\t\t\t\tFile sent '+ str(i+1)+' successfully')
         print('======================================+++++++++++++++++++=======================================')
     
-
+# Sending email which is not send
 def sendretrived():
     sub ="Mail_Not_Send/subject.txt"
     subjectre = getinfore(sub)
@@ -137,14 +143,20 @@ def sendretrived():
         print('======================================+++++++++++++++++++=======================================')
         shutil.rmtree('Files_to_send')
         shutil.rmtree('Mail_Not_Send')
-
+        
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# If internet connection is present
+print('|======================+++++++++++++++++++++++++++++++++++++=======================|')
+print('|                      SEND EMAIL USING COMMAND PROMPT (cmd)                       |')
+print('|======================+++++++++++++++++++++++++++++++++++++=======================|')
 def name():
     a = input("Enter the content :")
     if a == 'not send' or a == 'not sent':
         sendretrived()
     else:
         contconfirm(a)
-
+        
+# add attachments
 def attcon(l,k,a):
     m = input('Do you want to add attachment Y/N :')
     n = m.lower()
@@ -156,17 +168,19 @@ def attcon(l,k,a):
         print('Please the enter the valid information')
         attcon(l,k,a)
 
+# Subject and verification
 def review(k,a):
     l = input('Enter the subject :')
     attcon(l,k,a)
 
+# Send email with attachments
 def send(l,k,a):
     print('To : '+k+'\nSubject : '+l+'\nContent : '+a)
     subject = l
     body = a
-    sender_email = "YOUR_EMAIL-ID_"
+    sender_email = "YOUR_EMAIL-ID_" # Check you have filled this required data
     receiver_email = k
-    password = 'YOUR_PASSWORD_'
+    password = 'YOUR_PASSWORD_' # Check you have filled this required data
     message = MIMEMultipart()
     message["From"] = sender_email
     message["To"] = receiver_email
@@ -216,14 +230,13 @@ def send(l,k,a):
         print('======================================+++++++++++++++++++=======================================')
         storetoretrive(subject,receiver_email,body)
         
-def fromemail():
-    d = input('Enter FROM E-MAIL ID :')
-    return d
-
+# Get reciver mail-id        
 def recemail():
     e = input('Enter RECIVER E-MAIL ID :')
     return e 
 
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Content and other confirmations
 def editcontent(a):
     print('Previous content : '+a)
     print('Please enter the content form first')
@@ -265,7 +278,6 @@ def emailid(a):
     k = recemail()
     editfull(k,a)
 
-
 def contconfirm(a):
     b = input('Do you want to sent this content Y/N :')
     f = b.lower()
@@ -276,7 +288,10 @@ def contconfirm(a):
     else:
         print('Please the enter the valid information')
         contconfirm(a)
-    
+        
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#To check internet connection
+
 def connect(host='http://google.com'):
     try:
         urllib.request.urlopen(host) 
@@ -297,3 +312,4 @@ def internet():
              
 internet()
 
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
