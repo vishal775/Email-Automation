@@ -23,7 +23,7 @@ Sending mail **professionally** using python with N number of **attachments and 
 
 **Do check all the libraries are installed properly if you are using offline software for python (like IDLE, Pycharm etc.,)**
 
-**### HOW TO RUN THE CODE OR THE PROCEDURE TO GET THE OUTPUT**
+**HOW TO RUN THE CODE OR THE PROCEDURE TO GET THE OUTPUT**
 
    1) There are **_2 steps_** to to run this code 
    2) **_Step 1_** - Go to 'Manage your Google Account' setting and click on 'Security'.
