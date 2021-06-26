@@ -24,8 +24,8 @@ Sending mail professionally using python with N number of attachments and withou
 Do check all the libraries are installed properly if you are using offline software for python (like IDLE, Pycharm etc.,)
 
 # HOW TO RUN THE CODE OR THE PROCEDURE TO GET THE OUTPUT
-      1) There are **2 steps** to to run this code 
-      2) Go to 'Manage your Google Account' setting and click on 'Security'.
-      3) It is always safe to keep 2-Step Verification for your google gmail account.
-      4) Turn on the '2-Step Verification' with the user credentials.
-      5) Run the code 
+   1) There are **2 steps** to to run this code 
+   2) Go to 'Manage your Google Account' setting and click on 'Security'.
+   3) It is always safe to keep 2-Step Verification for your google gmail account.
+   4) Turn on the '2-Step Verification' with the user credentials.
+   5) Run the code 
